@@ -7,7 +7,6 @@
     <meta charset="UTF-8">
     <title>Magia Leader Generator</title>
     <!-- <script>
-        
         function showKids(){
             window.location.assign("magia-app - page 2.html");
         }
@@ -72,10 +71,19 @@
           </script> -->
     <style>
    
-    html{
-        height: 100%;
-    }
-
+   html, body{
+    height: 100%;
+   }
+   main{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+   }
+   #app-main{
+    background-image: url("img/cherries-pattern.png");
+    background-repeat: repeat;
+    flex-grow: 1;
+   }
     body{
         font-size: 20px;
         text-align:center;
@@ -83,8 +91,6 @@
 
         font-family: 'Roboto', sans-serif;
         padding-bottom: 30px;
-
-        height: 100%;
     }
 
     h1{
@@ -219,68 +225,55 @@
             margin: 20px auto;
        }
 
-       main{
-            display: flex;
-            flex-direction: column;
-            height: 100%;
-       }
-
-       #app-main{
-            background-image: url("img/Chery-pattern.png");
-            background: repeat;
-            flex-grow: 1;
-       }
-
     </style>
 
 </head>
 <body>
 <!-- <div id ="shadow"></div> -->
-    <main>
+    <main>    
         <div id="top-bar">
             <h1>Magia Leaders</h1>
         </div>
         <div id="app-main">
             <section class="weekly-magia-schedule">
-                <h1>Magia Leaders</h1>
-                
-                <div id="schedule">
-                    <div class="day">
-                        <div class="day-name" id="Monday"></div>
-                        <div class="student-pic"></div>
-                        <div class="student-name" id="MondayLeader"></div>
-                        <div class="student-pic"></div>
-                        <div class="student-name" id="MondayLeader2"></div>
-                    </div>
-                    <div class="day">
-                        <div class="day-name" id="Tuesday"></div>
-                        <div class="student-pic"></div>
-                        <div class="student-name" id="TuesdayLeader"></div>
-                        <div class="student-pic"></div>
-                        <div class="student-name" id="TuesdayLeader2"></div>
-                    </div>
-                    <div class="day">
-                        <div class="day-name" id="Wednesday"></div>
-                        <div class="student-pic"></div>
-                        <div class="student-name" id="WednesdayLeader"></div>
-                        <div class="student-pic"></div>
-                        <div class="student-name" id="WednesdayLeader2"></div>
-                    </div>
-                    <div class="day">
-                        <div class="day-name" id="Thursday"></div>
-                        <div class="student-pic"></div>
-                        <div class="student-name" id="ThursdayLeader"></div>
-                        <div class="student-pic"></div>
-                        <div class="student-name" id="ThursdayLeader2"></div>
-                    </div>
-                    <div class="day">
-                        <div class="day-name" id="Friday"></div>
-                        <div class="student-pic"></div>
-                        <div class="student-name" id="FridayLeader"></div>
-                        <div class="student-pic"></div>
-                        <div class="student-name" id="FridayLeader2"></div>
-                    </div>
+            <h1>Magia Leaders</h1>
+            <div id="schedule">
+                <div class="day">
+                    <div class="day-name" id="Monday"></div>
+                    <div class="student-pic"></div>
+                    <div class="student-name" id="MondayLeader"></div>
+                    <div class="student-pic"></div>
+                    <div class="student-name" id="MondayLeader2"></div>
                 </div>
+                <div class="day">
+                    <div class="day-name" id="Tuesday"></div>
+                    <div class="student-pic"></div>
+                    <div class="student-name" id="TuesdayLeader"></div>
+                    <div class="student-pic"></div>
+                    <div class="student-name" id="TuesdayLeader2"></div>
+                </div>
+                <div class="day">
+                    <div class="day-name" id="Wednesday"></div>
+                    <div class="student-pic"></div>
+                    <div class="student-name" id="WednesdayLeader"></div>
+                    <div class="student-pic"></div>
+                    <div class="student-name" id="WednesdayLeader2"></div>
+                </div>
+                <div class="day">
+                    <div class="day-name" id="Thursday"></div>
+                    <div class="student-pic"></div>
+                    <div class="student-name" id="ThursdayLeader"></div>
+                    <div class="student-pic"></div>
+                    <div class="student-name" id="ThursdayLeader2"></div>
+                </div>
+                <div class="day">
+                    <div class="day-name" id="Friday"></div>
+                    <div class="student-pic"></div>
+                    <div class="student-name" id="FridayLeader"></div>
+                    <div class="student-pic"></div>
+                    <div class="student-name" id="FridayLeader2"></div>
+                </div>
+        </div>
 
             </section>
         </div>
@@ -288,7 +281,6 @@
             <img id="wand" src="./img/Untitled.png" alt="Magic Wand" onclick="showDays()" />
             <img id="edit" src="./img/Untitled1.png" alt="Edit People" onclick="showKids()"/>
             <img id="calendar" src="./img/Untitled2.png" alt="Calendar"/>
-        
         </div>
     </main>
 </body>
