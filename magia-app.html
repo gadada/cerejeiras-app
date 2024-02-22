@@ -112,10 +112,21 @@
         font-size: 36px;
     }
        
-    #edit, #calendar{
+    .icons{
+        display: inline-block;
+        vertical-align: baseline;
+    }
+
+    #calendar{
         margin: 0 25px;
         width: 27px;
-        height: 28px;
+        height: 27px;
+    }
+
+    #edit{
+        margin: 0 25px;
+        width: 32px;
+        height: 33px;
     }
 
     #edit:hover, #calendar:hover{
@@ -254,8 +265,8 @@
             </section>
         </div>
         <div id="bottom-bar">
-            <a href="#"><img id="edit" src="./assets/svg/user-pen-solid.svg" alt="Edit People"/></a>
-            <a href="#"><img id="calendar" src="./assets/svg/calendar-days-solid.svg" alt="Calendar"/></a>
+            <a href="#"><img id="edit" class="icons" src="./assets/svg/user-pen-solid.svg" alt="Edit People"/></a>
+            <a href="#"><img id="calendar" class="icons" src="./assets/svg/calendar-days-solid.svg" alt="Calendar"/></a>
         </div>
     </main>
 </body>
