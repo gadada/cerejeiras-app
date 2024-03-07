@@ -104,7 +104,7 @@
         
     }
 
-    p{
+    .student p{
         font-family: Roboto;
     }
 
@@ -113,7 +113,6 @@
     }
 
     #user{
-        margin: 0 25px;
         width: auto;
         height: 39px;
         opacity: 60%;
@@ -131,13 +130,18 @@
         opacity: 70%;
     }
 
+    .List{
+        max-width: 85%;
+        margin:20px auto ;
+    }
+
     .student{
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: flex-start; 
         align-items: center;
         align-content: center;
-        gap: 30px;
+        gap:30px;
     }
 
     #home{
@@ -240,11 +244,16 @@
         <div id="app-main">
             <section class="List">
                 <div class="student">
-                <div class="student-icon" id="Guy-icon"><img id="user" src="./assets/svg/user-circle-solid.svg"/></div>
-                <p class="student-name">Guy Borin</p>
-                <a class="student-definisions"></a>
-            </div>
-    </section>
+                    <div class="student-icon" id="Guy-icon"><img id="user" src="./assets/svg/user-circle-solid.svg"/></div>
+                    <p class="student-name">Guy Borin</p>
+                    <a class="student-definisions"></a>
+                </div>
+                <div class="student">
+                    <div class="student-icon" id="Guy-icon"><img id="user" src="./assets/svg/user-circle-solid.svg"/></div>
+                    <p class="student-name">Rafa Coelho</p>
+                    <a class="student-definisions"></a>
+                </div>
+        </section>
 </div>
     <div id="bottom-bar">
         <a href="./magia-app.html"><img id="home" class="icons" src="./assets/svg/home-solid.svg" alt="Home icon"/></a>
