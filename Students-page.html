@@ -72,13 +72,22 @@
         }
           </script> -->
     <style>
-   
+     html, body{
+    height: 100%;
+   }
+   main{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+   }
+   #app-main{
+    flex-grow: 1;
+   }
     body{
         font-size: 20px;
         text-align:center;
         margin: 0;
         font-family: 'Roboto', sans-serif;
-        padding-bottom: 30px;
     }
 
     h1{
@@ -206,8 +215,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            position: fixed;
-            top: 0;    
             width: 100%;
             height: 60px;
             background: #159954;
@@ -217,8 +224,6 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            position: fixed;
-            bottom: 0;    
             width: 100%;
             height: 60px;
             background: #ffffff;
@@ -228,21 +233,24 @@
 
 </head>
 <body>
-    <div id="top-bar">
-        <h1>Students</h1>
-    </div>
-
-    <section class="List">
-            <div class="student">
+    <main>
+        <div id="top-bar">
+            <h1>Students</h1>
+        </div>
+        <div id="app-main">
+            <section class="List">
+                <div class="student">
                 <div class="student-icon" id="Guy-icon"><img id="user" src="./assets/svg/user-circle-solid.svg"/></div>
                 <p class="student-name">Guy Borin</p>
                 <a class="student-definisions"></a>
             </div>
     </section>
+</div>
     <div id="bottom-bar">
         <a href="./magia-app.html"><img id="home" class="icons" src="./assets/svg/home-solid.svg" alt="Home icon"/></a>
         <a href="#"><img id="more-students" class="icons" src="./assets/svg/user-plus-solid.svg" alt="Edit people icon"/></a>
         <a href="#"><img id="calendar" class="icons" src="./assets/svg/calendar-days-solid.svg" alt="Calendar icon"/></a>
     </div>
+    </main>
 </body>
 </html
