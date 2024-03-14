@@ -106,6 +106,8 @@
 
     .student p{
         font-family: Roboto;
+        width: 80%;
+        text-align: start;
     }
 
     h2{
@@ -118,21 +120,17 @@
         opacity: 60%;
     }
 
-    .settings{
-        width: 11px;
-        height: 11px;
-    }
        
-    .around{
+    .settings{
         background-color: #ffffff;
         width: 11px;
         height: 11px;
+        padding: 10px;
     }
 
-    .around :hover{
-        background-color: #afafaf;
-        width: 11px;
-        height: 11px;
+    .settings:hover{
+        background-color: #e7e6e6;
+        border-radius: 50%;
     }
 
     .icons{
@@ -263,8 +261,7 @@
                 <div class="student">
                     <div class="student-icon" id="Guy-icon"><img id="user" src="./assets/svg/user-circle-solid.svg"/></div>
                     <p class="student-name">Guy Borin</p>
-                    <a class="around-settings"><div class="around"></div></a>
-                    <div><img class="settings" src="./assets/svg/ellipsis-v-solid.svg"></div>
+                    <a class="student-settings"><img class="settings" src="./assets/svg/ellipsis-v-solid.svg"></a>
                 </div>
                 <div class="student">
                     <div class="student-icon" id="Guy-icon"><img id="user" src="./assets/svg/user-circle-solid.svg"/></div>
